@@ -1,0 +1,66 @@
+:root {
+  /* VRCast-inspired earth tones */
+  --bg: #d2c5af;
+  --surface: rgba(205, 193, 171, 0.88);
+  --surface-solid: #cdc1ab;
+  --surface-muted: rgba(189, 179, 156, 0.75);
+  --surface-selected: rgba(166, 101, 69, 0.18);
+  --panel: rgba(201, 189, 164, 0.9);
+  --text: #4b443a;
+  --text-muted: #786f63;
+  --border: rgba(93, 84, 67, 0.22);
+  --border-strong: rgba(93, 84, 67, 0.38);
+  --accent: #a66545;
+  --accent-soft: rgba(166, 101, 69, 0.22);
+  --accent-ink: #7a4230;
+  --accent-contrast: #f7f1e6;
+  --success: #578c5e;
+  --success-soft: rgba(87, 140, 94, 0.18);
+  --link: #6b4a36;
+  --focus: #a66545;
+  --warning: #8a5a32;
+  --warning-ink: #5d3d20;
+  --radius: 0.65rem;
+  --radius-sm: 0.45rem;
+  --font-sans: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", YuGothic,
+    "Segoe UI", Meiryo, sans-serif;
+  --font-serif: "Hiragino Mincho ProN", "Yu Mincho", YuMincho, "MS PMincho", serif;
+  font-family: var(--font-sans);
+  line-height: 1.5;
+  font-weight: 400;
+  color: var(--text);
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background:
+    radial-gradient(ellipse at top right, rgba(166, 101, 69, 0.12), transparent 42%),
+    linear-gradient(165deg, #d8cdb8 0%, #d2c5af 45%, #c9bda4 100%);
+}
+
+#root {
+  min-height: 100vh;
+}
+
+a {
+  color: var(--link);
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}

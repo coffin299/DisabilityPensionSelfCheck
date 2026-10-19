@@ -1,0 +1,43 @@
+# 障害年金・日常生活能力セルフチェック
+
+> 精神障害・知的障害に係る障害年金の「日常生活能力の判定」などを、診察前に自己整理するための静的Webツールです。
+
+- 公開URL: https://coffin299.github.io/DisabilityPensionSelfCheck/
+- 言語: 日本語
+- ライセンス: MIT
+- 運営形態: クライアントサイドのみ（サーバー・DB・外部APIなし）
+
+## できること
+
+- 日常生活能力の判定（7項目）を各4段階で自己評価する
+- 7項目すべて回答後に判定平均（合計÷7）を表示する
+- 日常生活能力の程度（5段階）を精神障害／知的障害の文言で自己選択する
+- 厚生労働省ガイドライン〔表１〕に基づく等級の目安を参考表示する（空欄は補完しない）
+- 自由記述とMarkdownエクスポートで医師への相談メモを作成する
+
+## できないこと / 注意
+
+- 医師の診断書評価の代替ではない
+- 日本年金機構による障害等級の認定結果を示すものではない
+- 「推定等級」「あなたは○級」などの確定表現は行わない
+- 受給可否を断定しない
+- アクセス解析・広告・アカウント登録なし
+- 回答の永続保存・外部送信なし（再読み込みで消える）
+
+## 公式資料
+
+- 等級判定ガイドライン（厚労省PDF）: https://www.mhlw.go.jp/file/04-Houdouhappyou-12512000-Nenkinkyoku-Jigyoukanrika/0000130045.pdf
+- 診断書記載要領（厚労省PDF）: https://www.mhlw.go.jp/file/04-Houdouhappyou-12512000-Nenkinkyoku-Jigyoukanrika/0000130048.pdf
+- 日本年金機構まとめ: https://www.nenkin.go.jp/service/jukyu/seido/shougainenkin/ninteikijun/20160715.html
+
+## ページ構成
+
+1. 免責事項の確認
+2. 精神障害 / 知的障害の系統選択（程度の文言）
+3. 7項目の順次自己評価
+4. 程度（5段階）の自己選択
+5. 結果・等級の目安（参考）・自由記述・Markdownエクスポート
+
+## Optional
+
+- GitHubリポジトリ: https://github.com/coffin299/DisabilityPensionSelfCheck
