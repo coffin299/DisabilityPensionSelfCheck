@@ -8,10 +8,11 @@
   position: absolute;
   left: -9999px;
   top: 0;
-  background: var(--surface);
+  background: var(--surface-solid);
   color: var(--text);
   padding: 0.5rem 0.75rem;
   z-index: 10;
+  border-radius: var(--radius-sm);
 }
 
 .skip:focus {
@@ -23,9 +24,10 @@
 .header {
   padding: 1.75rem 1.25rem 1.25rem;
   background:
-    radial-gradient(ellipse at top left, rgba(47, 107, 92, 0.12), transparent 55%),
-    linear-gradient(180deg, #eef3f0 0%, var(--bg) 100%);
+    linear-gradient(180deg, rgba(166, 101, 69, 0.14), transparent 70%),
+    rgba(201, 189, 164, 0.55);
   border-bottom: 1px solid var(--border);
+  backdrop-filter: blur(2px);
 }
 
 .brand {
@@ -58,9 +60,18 @@
   padding: 1.5rem 1.25rem 2.5rem;
 }
 
+.main > section {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem 1.15rem 1.35rem;
+  box-shadow: 0 1px 0 rgba(255, 248, 235, 0.35) inset;
+}
+
 .main h2 {
   margin: 0 0 0.75rem;
   font-size: 1.3rem;
+  color: var(--text);
 }
 
 .help {
@@ -89,17 +100,17 @@
 .secondary {
   font-weight: 700;
   padding: 0.65rem 1rem;
-  border-radius: 0.35rem;
+  border-radius: var(--radius-sm);
   border: 1px solid transparent;
 }
 
 .primary {
   background: var(--accent);
-  color: #fff;
+  color: var(--accent-contrast);
 }
 
 .secondary {
-  background: var(--surface);
+  background: var(--surface-muted);
   border-color: var(--border-strong);
   color: var(--text);
 }
@@ -126,8 +137,8 @@
 .typeButton {
   padding: 1.1rem 1rem;
   border: 1px solid var(--border);
-  border-radius: 0.4rem;
-  background: var(--surface);
+  border-radius: var(--radius);
+  background: var(--surface-muted);
   font-weight: 700;
   font-size: 1.05rem;
   color: var(--text);
@@ -135,6 +146,7 @@
 
 .typeButton:hover {
   border-color: var(--accent);
+  background: var(--surface-selected);
 }
 
 .typeSwitch {
@@ -148,15 +160,16 @@
 
 .chip {
   border: 1px solid var(--border-strong);
-  background: var(--surface);
-  border-radius: 0.3rem;
+  background: var(--surface-muted);
+  border-radius: var(--radius-sm);
   padding: 0.35rem 0.7rem;
   color: var(--text);
 }
 
 .chipActive {
   border-color: var(--accent);
-  background: var(--surface-selected);
+  background: var(--accent);
+  color: var(--accent-contrast);
   font-weight: 700;
 }
 
@@ -171,25 +184,22 @@
   width: 2.25rem;
   height: 2.25rem;
   border: 1px solid var(--border);
-  border-radius: 0.3rem;
-  background: var(--surface);
+  border-radius: var(--radius-sm);
+  background: var(--surface-muted);
   color: var(--text);
   font-weight: 700;
 }
 
 .itemJumpDone {
-  border-style: solid;
-  border-color: var(--accent);
-}
-
-.itemJumpDone::after {
-  content: "";
+  border-color: var(--success);
+  color: var(--success);
+  background: var(--success-soft);
 }
 
 .itemJumpCurrent {
   background: var(--accent);
   border-color: var(--accent);
-  color: #fff;
+  color: var(--accent-contrast);
 }
 
 .footer {
@@ -198,6 +208,7 @@
   color: var(--text-muted);
   font-size: 0.85rem;
   text-align: center;
+  background: rgba(201, 189, 164, 0.4);
 }
 
 .footer p {

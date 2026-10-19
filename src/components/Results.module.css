@@ -1,17 +1,20 @@
 .section h2 {
   margin: 0 0 1rem;
   font-size: 1.4rem;
+  color: var(--text);
 }
 
 .section h3 {
   margin: 1.5rem 0 0.6rem;
   font-size: 1.1rem;
+  color: var(--text);
 }
 
 .answerList {
   margin: 0;
   padding-left: 1.2rem;
   line-height: 1.7;
+  color: var(--text);
 }
 
 .hint {
@@ -29,21 +32,25 @@
   border: 1px solid var(--border-strong);
   border-left: 3px solid var(--warning);
   background: var(--surface-muted);
+  border-radius: var(--radius-sm);
   line-height: 1.6;
+  color: var(--text);
 }
 
 .pensionFieldset {
   border: 1px solid var(--border);
-  border-radius: 0.35rem;
+  border-radius: var(--radius);
   padding: 0.75rem 0.9rem;
   margin: 0.75rem 0;
   display: grid;
   gap: 0.55rem;
+  background: var(--surface-muted);
 }
 
 .pensionFieldset legend {
   padding: 0 0.25rem;
   font-weight: 700;
+  color: var(--text);
 }
 
 .inlineOption {
@@ -52,14 +59,20 @@
   align-items: flex-start;
   line-height: 1.45;
   cursor: pointer;
+  color: var(--text);
+}
+
+.inlineOption input {
+  accent-color: var(--accent);
 }
 
 .guideBox {
   margin: 0.75rem 0;
   padding: 0.85rem 0.95rem;
   border: 1px solid var(--border);
-  border-radius: 0.35rem;
-  background: var(--surface);
+  border-radius: var(--radius);
+  background: var(--surface-muted);
+  color: var(--text);
 }
 
 .guideBox p {
@@ -86,11 +99,11 @@
   box-sizing: border-box;
   padding: 0.75rem 0.85rem;
   border: 1px solid var(--border);
-  border-radius: 0.35rem;
+  border-radius: var(--radius-sm);
   font: inherit;
   line-height: 1.6;
   resize: vertical;
-  background: var(--surface);
+  background: rgba(247, 241, 230, 0.55);
   color: var(--text);
 }
 
@@ -103,7 +116,7 @@
   margin: 0;
   padding: 0.9rem 1rem;
   border: 1px solid var(--border);
-  border-radius: 0.35rem;
+  border-radius: var(--radius);
   background: var(--surface-muted);
   white-space: pre-wrap;
   word-break: break-word;
@@ -112,6 +125,7 @@
   line-height: 1.65;
   max-height: 22rem;
   overflow: auto;
+  color: var(--text);
 }
 
 .actions {
@@ -127,24 +141,24 @@
   font: inherit;
   font-weight: 700;
   padding: 0.65rem 1rem;
-  border-radius: 0.35rem;
+  border-radius: var(--radius-sm);
   border: 1px solid transparent;
   cursor: pointer;
 }
 
 .primary {
   background: var(--accent);
-  color: #fff;
+  color: var(--accent-contrast);
 }
 
 .secondary {
-  background: var(--surface);
+  background: var(--surface-muted);
   border-color: var(--border-strong);
   color: var(--text);
 }
 
 .danger {
-  background: var(--surface);
+  background: var(--surface-muted);
   border-color: var(--warning);
   color: var(--warning-ink);
 }

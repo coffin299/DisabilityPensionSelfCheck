@@ -9,6 +9,7 @@
   margin: 0 0 0.75rem;
   font-size: 1.2rem;
   font-weight: 700;
+  color: var(--text);
 }
 
 .note {
@@ -30,8 +31,8 @@
   align-items: start;
   padding: 0.85rem 0.9rem;
   border: 1px solid var(--border);
-  border-radius: 0.4rem;
-  background: var(--surface);
+  border-radius: var(--radius);
+  background: var(--surface-muted);
   cursor: pointer;
 }
 
@@ -72,4 +73,5 @@
 .label {
   line-height: 1.55;
   font-size: 0.95rem;
+  color: var(--text);
 }
