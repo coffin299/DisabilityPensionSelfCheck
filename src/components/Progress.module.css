@@ -1,0 +1,23 @@
+.wrap {
+  border-left: 3px solid var(--accent);
+  padding: 0.5rem 0 0.5rem 0.85rem;
+  margin: 0 0 1.25rem;
+}
+
+.count {
+  margin: 0;
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+.separator {
+  font-weight: 400;
+  color: var(--text-muted);
+}
+
+.list {
+  margin: 0.35rem 0 0;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}

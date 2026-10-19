@@ -1,0 +1,58 @@
+:root {
+  --bg: #f5f7f6;
+  --surface: #ffffff;
+  --surface-muted: #eef2f0;
+  --surface-selected: #e7f1ed;
+  --text: #1d2a26;
+  --text-muted: #4d5c56;
+  --border: #d0dbd5;
+  --border-strong: #9aafa5;
+  --accent: #2f6b5c;
+  --accent-soft: #d7ebe3;
+  --accent-ink: #214c41;
+  --link: #1f5f8b;
+  --focus: #c47b2b;
+  --warning: #9a5b1f;
+  --warning-ink: #6d3d0f;
+  --font-sans: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", YuGothic,
+    "Segoe UI", Meiryo, sans-serif;
+  --font-serif: "Hiragino Mincho ProN", "Yu Mincho", YuMincho, "MS PMincho", serif;
+  font-family: var(--font-sans);
+  line-height: 1.5;
+  font-weight: 400;
+  color: var(--text);
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background:
+    linear-gradient(180deg, rgba(47, 107, 92, 0.05), transparent 18rem),
+    var(--bg);
+}
+
+#root {
+  min-height: 100vh;
+}
+
+a {
+  color: var(--link);
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}

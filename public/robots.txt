@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://coffin299.github.io/DisabilityPensionSelfCheck/sitemap.xml
