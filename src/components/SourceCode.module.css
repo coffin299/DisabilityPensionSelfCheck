@@ -1,0 +1,90 @@
+.section {
+  margin-top: 1.25rem;
+  padding: 1rem 1.1rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface-muted);
+}
+
+.heading {
+  margin: 0 0 0.6rem;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.note {
+  margin: 0 0 0.9rem;
+  font-size: 0.9rem;
+  line-height: 1.65;
+  color: var(--text-muted);
+}
+
+.note a {
+  color: var(--link);
+}
+
+.list {
+  display: grid;
+  gap: 0.55rem;
+}
+
+.details {
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: rgba(247, 241, 230, 0.45);
+  overflow: hidden;
+}
+
+.summary {
+  display: grid;
+  gap: 0.15rem;
+  padding: 0.7rem 0.85rem;
+  cursor: pointer;
+  list-style: none;
+  color: var(--text);
+}
+
+.summary::-webkit-details-marker {
+  display: none;
+}
+
+.summary::before {
+  content: "▸ ";
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.details[open] > .summary::before {
+  content: "▾ ";
+}
+
+.path {
+  font-family: ui-monospace, "Cascadia Code", "Source Code Pro", Consolas, monospace;
+  font-size: 0.88rem;
+  font-weight: 700;
+}
+
+.desc {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  padding-left: 1rem;
+}
+
+.code {
+  margin: 0;
+  padding: 0.85rem 0.95rem 1rem;
+  border-top: 1px solid var(--border);
+  max-height: 22rem;
+  overflow: auto;
+  font-family: ui-monospace, "Cascadia Code", "Source Code Pro", Consolas, monospace;
+  font-size: 0.75rem;
+  line-height: 1.55;
+  white-space: pre;
+  color: var(--text);
+  background: rgba(75, 68, 58, 0.06);
+}
+
+.code code {
+  font: inherit;
+}

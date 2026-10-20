@@ -4,6 +4,7 @@ import { Disclaimer } from './components/Disclaimer'
 import { ItemQuestion } from './components/ItemQuestion'
 import { Progress } from './components/Progress'
 import { Results } from './components/Results'
+import { SourceCode } from './components/SourceCode'
 import {
   DISABILITY_TYPE_LABELS,
   JUDGMENT_ITEMS,
@@ -104,6 +105,7 @@ export default function App() {
               開始
             </h2>
             <Disclaimer variant="start" />
+            <SourceCode />
             <div className={styles.actions}>
               <button
                 type="button"
